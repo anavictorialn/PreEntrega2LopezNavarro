@@ -4,35 +4,44 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="img/logoEvadla.jpg" type="image/x-icon">
+
+<!--Bootstrap CSS con link CDN-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+
+<!--Link a su propio CSS-->    
     <link rel="stylesheet" href="css/styles.css">
+
     <title>Evadla</title>
 </head>
 <body>
     <header id="arriba">
         <img src="img/logoEvadla.jpg" alt="Logo Evadla" class="img-logo-evadla">
-        <nav>
-            <ul class="lista-nav">
-                <li>
-                    <a href="index.html">Inicio</a>
-                </li>
 
-                <li>
-                    <a href="pages/historia.html">Historia</a>
+        <nav class="navbar navbar-expand-lg bg-body-tertiary">
+            <div class="container-fluid">
+            <a class="navbar-brand" href="index.html">Inicio</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="pages/historia.html">Historia</a>
                 </li>
-
-                <li>
-                    <a href="pages/propuesta.html">Propuesta</a>
+                <li class="nav-item">
+                    <a class="nav-link" href="pages/propuesta.html">Propuesta</a>
                 </li>
-
-                <li>
-                    <a href="pages/libros.html">Libros</a>
+                <li class="nav-item">
+                    <a class="nav-link" href="pages/libros.html">Libros</a>
                 </li>
-
-                <li>
-                    <a href="pages/contacto.html">Contacto</a>
+                <li class="nav-item">
+                    <a class="nav-link" href="pages/contacto.html">Contacto</a>
                 </li>
-            </ul>
+                </ul>
+            </div>
+            </div>
         </nav>
+
     </header>
 
     <h1>Club de lectura Evadla</h1>
@@ -40,7 +49,7 @@
     <section id="inicio">
         <p class="fondobeige">El regalo más grande es la pasión por la lectura. Es barato, consuela, excita, te da el conocimiento del mundo y la experiencia de una amplia clase. Es una iluminación moral. (Elizabeth Hardwick)</p>
 
-        <p>Leer es un gusto que debe ser compartido; el principal objetivo de este club es transmitir a sus integrantes el placer por la lectura.
+        <p class="container">Leer es un gusto que debe ser compartido; el principal objetivo de este club es transmitir a sus integrantes el placer por la lectura.
 
         Formar parte de un club de lectura ayuda a sus participantes a aprender sobre libros, desarrollar habilidades verbales, mejorar la comprensión lectora y compartir conocimientos.
 
@@ -48,14 +57,53 @@
 
         Cuando se comparte la lectura, los participantes mejoran sus habilidades para explicar y formular ideas, de tal manera que los beneficios de un club de lectura se pueden observar tanto a nivel individual como grupal.</p>
 
-        <p>¿Qué es un Mediador de Lectura?
-        El mediador de lectura es un enlace o puente vivo entre los libros y el lector iniciante para facilitar “el diálogo entre ambos”. La mediación origina el acercamiento del lector o estudiante a diversos materiales de lectura (corpus de lectura). El mediador intenta hacer esto acompañando los procesos de lectura para generar un sentido, para poder conectar la lectura con la realidad del individuo (“apropiación” de la lectura) y al mismo monitorear el progreso de este proceso.
-            
-        Este proceso puede experimentarse de manera distinta en cada individuo, ya sea por las condiciones personales, geográficas, socioculturales, económicas, educativas, etc. que han generado en algún momento, un “distanciamiento” con la lectura. Ese distanciamiento se da, por ejemplo, cuando un estudiante es obligado a leer ciertos libros en la escuela que, en el contexto particular de su vida, no tienen necesariamente significancia o “sentido” con el cual el estudiante pueda identificarse. En lugar de desarrollar un gusto por la lectura, en muchos casos ocurre todo lo contrario: se genera un rechazo hacia la lectura, asociándolo a una actividad tediosa y aburrida. Otra razón por las cual una persona no encuentra placer en la lectura puede ser el grado de instrucción, el entorno o los medios necesarios para acceder a libros. En palabras de Genevieve Patte[3], la principal barrera que existe en la adopción de la lectura es la intimidación. Sin embargo, dice Patte, existen muchos caminos diversos para vencer este bloqueo. El mediador de lectura puede, sin duda, encontrar estos caminos con herramientas apropiadas. La clave es identificar “el libro adecuado en el momento adecuado para la persona adecuada”
-            
-        Aidan Chamber explica en su círculo virtuoso[4]de la lectura que cuando el lector encuentra un sentido a la lectura, y su contenido resuena con su realidad, se genera un sentimiento de placer y un deseo por experimentar más de ese placer.
-            
-        El papel del mediador de lectura es formar parte del proceso de la lectura[5]; lo que significa involucrarse de cerca en lo que el estudiante lee, cómo lo lee, en sus necesidades e intereses de conocimiento y las habilidades lectoras que posee. Todo esto para encontrar los aspectos en los que se debe ayudar, orientar y/o complementar al joven lector. Es también conocer las características del aprendiz, gustos, aficiones y preferencias de lectura. Finalmente, debe también tener conocimiento de posibles recomendaciones de libros que puede hacer al lector.</p>
+        <!--Grid system de Bootstrap  basado en 12 columnas-->
+        <div class="row">
+            <p class="col-12 col-md-6 col-lg-3">¿Qué es un Mediador de Lectura?
+            El mediador de lectura es un enlace o puente vivo entre los libros y el lector iniciante para facilitar “el diálogo entre ambos”. La mediación origina el acercamiento del lector o estudiante a diversos materiales de lectura (corpus de lectura). El mediador intenta hacer esto acompañando los procesos de lectura para generar un sentido, para poder conectar la lectura con la realidad del individuo (“apropiación” de la lectura) y al mismo monitorear el progreso de este proceso.</p>
+            <p class="col-12 col-md-6 col-lg-3">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Minus mollitia quas, molestias officiis obcaecati sed vitae ad vel iusto impedit illo, eligendi reiciendis minima consectetur, hic voluptates praesentium? Vitae, placeat. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit tenetur sit dolorem ea aliquid? Exercitationem molestias, officiis minus praesentium, aut, quos odio ea consectetur quasi inventore quia saepe quam. Hic!</p>
+            <p class="col-12 col-md-6 col-lg-3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos temporibus minus, nihil nulla officiis ullam dolor vitae tempora laborum, voluptates natus blanditiis at omnis consequatur nisi corrupti libero architecto inventore. Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat aliquam minima deserunt ipsa magni, magnam ab, ducimus, aspernatur facere tempora hic soluta. Ullam deserunt odio, reprehenderit consequatur amet aspernatur placeat.</p>
+            <p class="col-12 col-md-6 col-lg-3">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Odio ducimus eligendi deleniti quam perferendis incidunt, recusandae quos culpa quia, voluptates enim itaque tempore voluptatum assumenda rerum voluptate. Eum, est! Provident. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sit voluptas recusandae facilis magnam dicta voluptatum maiores autem cum, animi fuga, delectus sed similique quaerat ut minima dignissimos dolor laudantium voluptate!</p>
+        </div>
+
+        <div class="container-cards">
+
+            <div class="card" style="width: 18rem;">
+                <img src="img/elprincipitoEvadla.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                </div>
+            </div>
+
+            <div class="card" style="width: 18rem;">
+                <img src="img/MuchasVidas.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                </div>
+            </div>
+
+            <div class="card" style="width: 18rem;">
+                <img src="img/WimHof.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                </div>
+            </div>
+
+            <div class="card" style="width: 18rem;">
+                <img src="img/ElPoderDelAhora.png" class="card-img-top" alt="...">
+                <div class="card-body">
+                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                </div>
+            </div>
+
+            <div class="card" style="width: 18rem;">
+                <img src="img/4acuerdos.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                </div>
+            </div>
+
+        </div>
 
         <a href="#arriba">Ir arriba</a>
     </section>
@@ -67,5 +115,8 @@
     <footer>
         <p>Todos los derechos reservados para Evadla</p>
     </footer>
+
+<!--Bootstrap JS con link CDN-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
 </body>
 </html>

@@ -15,28 +15,29 @@
 </head>
 <body>
     <header id="arriba">
-        <nav>
-            <ul class="lista-nav">
-                <li>
-                    <a href="../index.html">Inicio</a>
+        <nav class="navbar navbar-expand-lg bg-body-tertiary">
+            <div class="container-fluid">
+            <a class="navbar-brand" href="../index.html">Inicio</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="historia.html">Historia</a>
                 </li>
-
-                <li>
-                    <a href="historia.html">Historia</a>
+                <li class="nav-item">
+                    <a class="nav-link" href="propuesta.html">Propuesta</a>
                 </li>
-
-                <li>
-                    <a href="propuesta.html">Propuesta</a>
+                <li class="nav-item">
+                    <a class="nav-link" href="libros.html">Libros</a>
                 </li>
-
-                <li>
-                    <a href="libros.html">Libros</a>
+                <li class="nav-item">
+                    <a class="nav-link" href="contacto.html">Contacto</a>
                 </li>
-
-                <li>
-                    <a href="contacto.html">Contacto</a>
-                </li>
-            </ul>
+                </ul>
+            </div>
+            </div>
         </nav>
     </header>
 
@@ -50,7 +51,34 @@
             <p class="col-12 col-md-6 col-lg-3">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ad totam cumque saepe magnam aliquid labore voluptatum doloremque, ea id neque, nisi itaque. Placeat facilis sit dolorum soluta rerum nulla fuga!</p>
             <p class="col-12 col-md-6 col-lg-3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos temporibus minus, nihil nulla officiis ullam dolor vitae tempora laborum, voluptates natus blanditiis at omnis consequatur nisi corrupti libero architecto inventore.</p>
             <p class="col-12 col-md-6 col-lg-3">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Odio ducimus eligendi deleniti quam perferendis incidunt, recusandae quos culpa quia, voluptates enim itaque tempore voluptatum assumenda rerum voluptate. Eum, est! Provident.</p>
+        </div>
 
+        <div id="carouselExampleFade" class="carousel slide carousel-fade">
+            <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="../img/Carrusel1.jpg" class="d-block w-100" alt="...">
+            </div>
+            <div class="carousel-item">
+                <img src="../img/Carrusel2.jpg" class="d-block w-100" alt="...">
+            </div>
+            <div class="carousel-item">
+                <img src="../img/Carrusel3.jpg" class="d-block w-100" alt="...">
+            </div>
+            <div class="carousel-item">
+                <img src="../img/Carrusel4.jpg" class="d-block w-100" alt="...">
+            </div>
+            <div class="carousel-item">
+                <img src="../img/Carrusel5.jpg" class="d-block w-100" alt="...">
+            </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+            </button>
         </div>
 
         <a href="#arriba">Ir arriba</a>

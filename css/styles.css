@@ -35,7 +35,7 @@ img {
 }
 
 #inicio {
-    background-image: url(../img/librosEvadla.jpg);
+    background-image: url(../img/librosEvadla3.jpg);
     background-attachment: fixed;
     background-blend-mode: color-dodge;
     font-size: large;
@@ -45,6 +45,8 @@ img {
     background-color: rgb(120, 113, 97);
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-size: 1.8rem;
+    margin-right: 20px;
+    margin-left: 20px;
 }
 
 ul {
