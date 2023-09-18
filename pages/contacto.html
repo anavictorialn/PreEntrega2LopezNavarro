@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="../img/logoEvadla.jpg" type="image/x-icon">
+    <link rel="stylesheet" href="../css/styles.css">
+    <title>Evadla</title>
+</head>
+<body>
+    <header id="arriba">
+        <nav>
+            <ul class="lista-nav">
+                <li>
+                    <a href="../index.html">Inicio</a>
+                </li>
+
+                <li>
+                    <a href="historia.html">Historia</a>
+                </li>
+
+                <li>
+                    <a href="propuesta.html">Propuesta</a>
+                </li>
+
+                <li>
+                    <a href="libros.html">Libros</a>
+                </li>
+
+                <li>
+                    <a href="contacto.html">Contacto</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="formulario">
+        <h1>Formulario</h1>
+
+        <form>
+            <div>
+                <label for="nombre">Nombre y apellido</label>
+                <input type="text" id="nombre">                
+            </div>
+
+            <div>
+                <label for="edad">Edad</label>
+                <input type="number" id="edad">
+                <label for="email">Email</label>
+                <input type="email" id="email">                 
+            </div>
+
+            <div>
+                <p>Género</p>
+                <label for="masculino">Masculino</label>
+                <input type="radio" name="genero" id="masculino">
+                <label for="femenino">Femenino</label>
+                <input type="radio" name="genero" id="femenino">
+                <label for="na">Prefiero no decir</label>
+                <input type="radio" name="genero" id="na">                
+            </div>
+
+            <div>
+                <label for="librofavorito">Libro favorito</label>
+                <input type="text" id="librofavorito">
+            </div>
+
+            <div>
+                <label for="mensaje">Comentarios</label>
+                <textarea id="mensaje" cols="30" rows="10"></textarea>
+            </div>
+
+            <div>
+                <input type="submit" value="Enviar Formulario">
+                <input type="reset" value="Limpiar formulario">
+            </div>
+        </form>
+
+        <a href="#arriba">Ir arriba</a>
+    </section> 
+    
+    <footer>
+        <p>Todos los derechos reservados para Evadla</p>
+    </footer>
+</body>
+</html>

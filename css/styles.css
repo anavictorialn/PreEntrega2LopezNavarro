@@ -1,0 +1,97 @@
+html {/*etiqueta raíz*/
+font-size: 62.5%;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+header {
+position: sticky;
+top: 0;
+display: flex;
+justify-content: space-evenly;
+align-items: center;
+}
+
+h1 {
+color: darkgoldenrod;
+text-align: center;
+font-size: xx-large;
+}
+
+a {
+    text-decoration: none;
+    font-size: large;
+}
+
+img {
+    max-width: 100%;
+}
+
+#arriba {
+    background-color: rgb(120, 113, 97);
+}
+
+#inicio {
+    background-image: url(../img/librosEvadla.jpg);
+    background-attachment: fixed;
+    background-blend-mode: color-dodge;
+    font-size: large;
+}
+
+.fondobeige {
+    background-color: rgb(120, 113, 97);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 1.8rem;
+}
+
+ul {
+    list-style-type: none;
+}
+
+.caja1historia {
+    background-color: rgb(120, 113, 97);
+    width: 400px;
+    height: 250px;
+    font-size: medium;
+    padding: 10px 20px;
+    border: solid 5px black;
+}
+
+.lista-nav {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+}
+
+.img-principito {
+    display: block;
+    margin: 0 auto;
+    width: 200px;
+}
+
+.img-logo-evadla {
+    width: 50px;
+}
+
+.formulario {
+    font-size: large;
+}
+
+.whatsapp {
+    width: 80px;
+    position: fixed;
+    bottom: 0;
+    right: 30px;
+}
+
+.row {
+    background-color: rgb(120, 113, 97);
+    font-size: medium;
+    margin-bottom: 20px;
+    margin-right: 20px;
+    margin-left: 20px;
+}
