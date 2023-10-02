@@ -1,147 +1,180 @@
-html {/*etiqueta raíz*/
-font-size: 62.5%;
+@charset "UTF-8";
+html { /*etiqueta raíz*/
+  font-size: 62.5%;
 }
 
-*{
-    margin: 0;
-    padding: 0;
+* {
+  margin: 0;
+  padding: 0;
 }
 
 header {
-position: sticky;
-top: 0;
-display: flex;
-justify-content: space-evenly;
-align-items: center;
-background-color: rgb(120, 113, 97);
-font-size: medium;
+  position: sticky;
+  top: 0;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  background-color: rgb(120, 113, 97);
+  font-size: medium;
 }
 
 a {
-    text-decoration: none;
-    font-size: large;
+  text-decoration: none;
+  font-size: large;
 }
 
 h1 {
-color: darkgoldenrod;
-text-align: center;
-font-size: xx-large;
+  color: darkgoldenrod;
+  text-align: center;
+  font-size: xx-large;
+}
+
+/*Animación de transición*/
+h1 {
+  transition: all 0.2s;
+}
+h1:hover {
+  background-color: rgb(120, 113, 97);
+  color: black;
 }
 
 p {
-    font-size: medium;
+  font-size: medium;
 }
 
 img {
-    max-width: 100%;
-}
-
-#inicio {
-    background-image: url(../img/librosEvadla3.jpg);
-    background-attachment: fixed;
-    background-blend-mode: color-dodge;
-    font-size: large;
-}
-
-.fondobeige {
-    background-color: rgb(120, 113, 97);
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    font-size: 1.8rem;
-    margin-right: 20px;
-    margin-left: 20px;
-}
-
-
-.caja1historia {
-    background-color: rgb(120, 113, 97);
-    width: 400px;
-    height: 250px;
-    font-size: medium;
-    padding: 10px 20px;
-    border: solid 5px black;
+  max-width: 100%;
 }
 
 .lista-nav {
-    list-style: none;
-    display: flex;
-    justify-content: center;
-    gap: 30px;
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  gap: 30px;
 }
 
 .img-logo-evadla {
-    width: 50px;
-}
-
-.formulario {
-    font-size: large;
-}
-
-.whatsapp {
-    width: 80px;
-    position: fixed;
-    bottom: 0;
-    right: 30px;
+  width: 50px;
 }
 
 .row {
-    background-color: rgb(120, 113, 97);
-    font-size: medium;
-    margin-bottom: 20px;
-    margin-right: 20px;
-    margin-left: 20px;
+  background-color: rgb(120, 113, 97);
+  font-size: medium;
+  margin-bottom: 20px;
+  margin-right: 20px;
+  margin-left: 20px;
 }
 
-.carousel-item img {
-    height: 45vh;
+.boton, .botones-form {
+  border: solid 1px rgb(120, 113, 97);
+  width: 200px;
+  text-align: center;
+  padding: 5px 20px;
 }
 
-@media (min-width: 520px) {
-    .carousel-item img {
-        height: 50vh;
-    }
+.whatsapp {
+  width: 80px;
+  position: fixed;
+  bottom: 0;
+  right: 30px;
 }
 
-@media (min-width: 768px) {
-    .carousel-item img {
-        height: 70vh;
-    }
+#inicio {
+  background-image: url(../img/librosEvadla3.jpg);
+  background-attachment: fixed;
+  background-blend-mode: color-dodge;
+  font-size: large;
 }
 
-@media (min-width: 1024px) {
-    .carousel-item img {
-        height: 80vh;
-    }
-
-    #carouselExampleFade {
-        width: 70%;
-    }
+.fondobeige {
+  background-color: rgb(120, 113, 97);
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 1.8rem;
+  margin-right: 20px;
+  margin-left: 20px;
 }
+
 .container-cards {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    gap: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
 }
 
 @media (min-width: 768px) {
-    .container-cards {
-display: grid;
-grid-template-columns: repeat(2, 1fr);
-justify-items: center;
-    }
+  .container-cards {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    justify-items: center;
+  }
 }
-
 @media (min-width: 992px) {
-    .container-cards {
-grid-template-columns: repeat(3, 1fr);
-    }
+  .container-cards {
+    grid-template-columns: repeat(3, 1fr);
+  }
 }
-
 .card {
-    max-width: 100%;
+  max-width: 100%;
 }
 
 .card-img-top {
-    height: 200px;
+  height: 200px;
 }
+
+.caja1historia {
+  background-color: rgb(120, 113, 97);
+  width: 400px;
+  height: 250px;
+  font-size: medium;
+  padding: 10px 20px;
+  border: solid 5px black;
+  margin-bottom: 25px;
+}
+
+.accordion-flush {
+  font-size: medium;
+}
+
+.accordion-button {
+  font-size: medium;
+}
+
+.carousel-item img {
+  height: 45vh;
+}
+
+@media (min-width: 520px) {
+  .carousel-item img {
+    height: 50vh;
+  }
+}
+@media (min-width: 768px) {
+  .carousel-item img {
+    height: 70vh;
+  }
+}
+@media (min-width: 1024px) {
+  .carousel-item img {
+    height: 80vh;
+  }
+  #carouselExampleFade {
+    width: 70%;
+  }
+}
+.formulario {
+  font-size: large;
+}
+
+/*Extend*/
+.botones-form {
+  background-color: #b2b2b2;
+  font-weight: bold;
+  transition: ease-in 0.4s;
+}
+.botones-form:hover {
+  background-color: rgb(120, 113, 97);
+  color: #b2b2b2;
+}
+
+/*# sourceMappingURL=styles.css.map */

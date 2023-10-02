@@ -1,0 +1,16 @@
+.formulario {
+    font-size: large;
+}
+
+/*Extend*/
+.botones-form {
+    @extend .boton;
+    background-color: $color-secundario;
+    font-weight: bold;
+    transition: ease-in .4s;
+
+    &:hover {
+        background-color: $color-primario;
+        color: $color-secundario;
+    }
+}

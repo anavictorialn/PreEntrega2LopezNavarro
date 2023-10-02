@@ -1,0 +1,80 @@
+html {/*etiqueta raíz*/
+    font-size: 62.5%;
+    }
+    
+    *{
+        margin: 0;
+        padding: 0;
+    }
+    
+    header {
+    position: sticky;
+    top: 0;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color: $color-primario;
+    font-size: medium;
+    }
+    
+    a {
+        text-decoration: none;
+        font-size: large;
+    }
+    
+    h1 {
+    color: $color-titles;
+    text-align: center;
+    font-size: $size-h1;
+    }
+
+    /*Animación de transición*/
+    h1 {
+        transition: all .2s;
+    
+        &:hover {
+            background-color: $color-primario;
+            color: black;
+        }
+    }
+    
+    p {
+        font-size: medium;
+    }
+    
+    img {
+        max-width: 100%;
+    }
+
+    .lista-nav {
+        list-style: none;
+        display: flex;
+        justify-content: center;
+        gap: 30px;
+    }
+    
+    .img-logo-evadla {
+        width: 50px;
+    }
+
+    .row {
+        background-color: $color-primario;
+        font-size: medium;
+        margin-bottom: 20px;
+        margin-right: 20px;
+        margin-left: 20px;
+    }
+
+    .boton {
+        border: solid 1px $color-primario;
+        width: 200px;
+        text-align: center;
+        padding: 5px $espaciado-general;
+    }
+
+    .whatsapp {
+        width: 80px;
+        position: fixed;
+        bottom: 0;
+        right: 30px;
+    }
