@@ -11,6 +11,7 @@
     font-size: 1.8rem;
     margin-right: 20px;
     margin-left: 20px;
+    padding: 8px;
 }
 
 .container-cards {
@@ -21,7 +22,7 @@
     gap: 20px;
 }
 
-@media (min-width: 768px) {
+@media (min-width: $tablet) {
     .container-cards {
 display: grid;
 grid-template-columns: repeat(2, 1fr);
@@ -29,7 +30,7 @@ justify-items: center;
     }
 }
 
-@media (min-width: 992px) {
+@media (min-width: $desktop) {
     .container-cards {
 grid-template-columns: repeat(3, 1fr);
     }

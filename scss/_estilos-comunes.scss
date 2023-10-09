@@ -54,15 +54,33 @@ html {/*etiqueta raíz*/
     }
     
     .img-logo-evadla {
-        width: 50px;
+        width: 35px;
     }
 
     .row {
         background-color: $color-primario;
         font-size: medium;
+        margin-top: 15px;
         margin-bottom: 20px;
         margin-right: 20px;
         margin-left: 20px;
+        padding: 10px;
+    }
+
+    .bi {
+        font-size: x-large;
+    }
+
+    .bi-instagram {
+        color: rgb(166, 67, 83);
+    }
+
+    .bi-tiktok {
+        color: black;
+    }
+
+    .bi-youtube {
+        color: red;
     }
 
     .boton {

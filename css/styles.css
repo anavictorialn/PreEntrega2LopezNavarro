@@ -1,4 +1,6 @@
 @charset "UTF-8";
+/*Resoluciones de pantalla*/
+/*Mixins*/
 html { /*etiqueta raíz*/
   font-size: 62.5%;
 }
@@ -54,15 +56,33 @@ img {
 }
 
 .img-logo-evadla {
-  width: 50px;
+  width: 35px;
 }
 
 .row {
   background-color: rgb(120, 113, 97);
   font-size: medium;
+  margin-top: 15px;
   margin-bottom: 20px;
   margin-right: 20px;
   margin-left: 20px;
+  padding: 10px;
+}
+
+.bi {
+  font-size: x-large;
+}
+
+.bi-instagram {
+  color: rgb(166, 67, 83);
+}
+
+.bi-tiktok {
+  color: black;
+}
+
+.bi-youtube {
+  color: red;
 }
 
 .boton, .botones-form {
@@ -92,6 +112,7 @@ img {
   font-size: 1.8rem;
   margin-right: 20px;
   margin-left: 20px;
+  padding: 8px;
 }
 
 .container-cards {
@@ -122,14 +143,8 @@ img {
   height: 200px;
 }
 
-.caja1historia {
-  background-color: rgb(120, 113, 97);
-  width: 400px;
-  height: 250px;
-  font-size: medium;
-  padding: 10px 20px;
-  border: solid 5px black;
-  margin-bottom: 25px;
+.icono-texto img {
+  width: 80px;
 }
 
 .accordion-flush {
@@ -162,6 +177,59 @@ img {
     width: 70%;
   }
 }
+/*Filtro*/
+#autoayuda, #novela, #todos {
+  display: none;
+}
+
+.autoayuda, .novela {
+  display: none;
+}
+
+#autoayuda:checked ~ .container-cards .autoayuda, #novela:checked ~ .container-cards .novela {
+  display: flex;
+}
+
+#todos:checked ~ .container-cards .autoayuda, #todos:checked ~ .container-cards .novela {
+  display: flex;
+}
+
+/*Aquí podría usar mixin de flex-columna*/
+.container-opciones {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+}
+
+/*Aquí podría usar mixin de flex-fila*/
+@media (min-width: 560px) {
+  .container-opciones {
+    flex-direction: row;
+  }
+}
+.container-opciones label {
+  border: solid 1px;
+  padding: 8px 15px;
+  width: 150px;
+  text-align: center;
+  cursor: pointer;
+  background-color: #b2b2b2;
+}
+
+.container-opciones label:hover {
+  background-color: rgb(120, 113, 97);
+  color: #b2b2b2;
+  border: none;
+}
+
+#autoayuda:checked ~ .container-opciones .label-autoayuda,
+#novela:checked ~ .container-opciones .label-novela,
+#todos:checked ~ .container-opciones .label-todos {
+  background-color: rgb(120, 113, 97);
+}
+
 .formulario {
   font-size: large;
 }

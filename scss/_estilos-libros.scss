@@ -1,0 +1,54 @@
+/*Filtro*/
+#autoayuda, #novela, #todos {
+    display: none;
+}
+
+.autoayuda, .novela {
+    display: none;
+}
+
+#autoayuda:checked ~ .container-cards .autoayuda, #novela:checked ~ .container-cards .novela {
+    display: flex;
+}
+
+#todos:checked ~ .container-cards .autoayuda, #todos:checked ~ .container-cards .novela {
+    display: flex;
+}
+
+/*Aquí podría usar mixin de flex-columna*/
+.container-opciones {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+
+
+/*Aquí podría usar mixin de flex-fila*/
+@media (min-width: 560px) {
+    .container-opciones {
+        flex-direction: row;
+    }
+}
+
+.container-opciones label {
+    border: solid 1px;
+    padding: 8px 15px;
+    width: 150px;
+    text-align: center;
+    cursor: pointer;
+    background-color: $color-secundario;
+}
+
+.container-opciones label:hover {
+    background-color: $color-primario;
+    color: $color-secundario;
+    border: none;
+}
+
+#autoayuda:checked ~ .container-opciones .label-autoayuda,
+#novela:checked ~ .container-opciones .label-novela,
+#todos:checked ~ .container-opciones .label-todos {
+    background-color: $color-primario;
+}
