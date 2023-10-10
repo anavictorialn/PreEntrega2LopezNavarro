@@ -85,7 +85,15 @@ img {
   color: red;
 }
 
-.boton, .botones-form {
+footer {
+  margin-top: 60px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.boton, form .botones-form {
   border: solid 1px rgb(120, 113, 97);
   width: 200px;
   text-align: center;
@@ -113,6 +121,12 @@ img {
   margin-right: 20px;
   margin-left: 20px;
   padding: 8px;
+  font-style: italic;
+}
+
+.bold {
+  font-weight: bold;
+  font-size: large;
 }
 
 .container-cards {
@@ -194,16 +208,14 @@ img {
   display: flex;
 }
 
-/*Aquí podría usar mixin de flex-columna*/
 .container-opciones {
   display: flex;
   flex-direction: column;
-  align-items: center;
   justify-content: center;
+  align-items: center;
   gap: 20px;
 }
 
-/*Aquí podría usar mixin de flex-fila*/
 @media (min-width: 560px) {
   .container-opciones {
     flex-direction: row;
@@ -216,12 +228,14 @@ img {
   text-align: center;
   cursor: pointer;
   background-color: #b2b2b2;
+  font-weight: bold;
 }
 
 .container-opciones label:hover {
   background-color: rgb(120, 113, 97);
   color: #b2b2b2;
   border: none;
+  font-weight: bold;
 }
 
 #autoayuda:checked ~ .container-opciones .label-autoayuda,
@@ -230,17 +244,40 @@ img {
   background-color: rgb(120, 113, 97);
 }
 
-.formulario {
+.btn {
+  background-color: #b2b2b2;
+  color: black;
+  border: none;
+  font-weight: bold;
+}
+.btn:hover {
+  background-color: rgb(120, 113, 97);
+  color: #b2b2b2;
+}
+
+.main-contacto {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 40px;
   font-size: large;
 }
 
-/*Extend*/
-.botones-form {
+form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  /*Anidación y Extend*/
+}
+form .botones-form {
   background-color: #b2b2b2;
   font-weight: bold;
   transition: ease-in 0.4s;
 }
-.botones-form:hover {
+form .botones-form:hover {
   background-color: rgb(120, 113, 97);
   color: #b2b2b2;
 }

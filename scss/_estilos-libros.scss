@@ -15,17 +15,11 @@
     display: flex;
 }
 
-/*Aquí podría usar mixin de flex-columna*/
 .container-opciones {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
+    @include flex-columna;
     gap: 20px;
 }
 
-
-/*Aquí podría usar mixin de flex-fila*/
 @media (min-width: 560px) {
     .container-opciones {
         flex-direction: row;
@@ -39,16 +33,30 @@
     text-align: center;
     cursor: pointer;
     background-color: $color-secundario;
+    font-weight: bold;
 }
 
 .container-opciones label:hover {
     background-color: $color-primario;
     color: $color-secundario;
     border: none;
+    font-weight: bold;
 }
 
 #autoayuda:checked ~ .container-opciones .label-autoayuda,
 #novela:checked ~ .container-opciones .label-novela,
 #todos:checked ~ .container-opciones .label-todos {
     background-color: $color-primario;
+}
+
+.btn {
+    background-color: $color-secundario;
+    color: black;
+    border: none;
+    font-weight: bold;
+
+    &:hover {
+        background-color: $color-primario;
+        color: $color-secundario;
+    }
 }

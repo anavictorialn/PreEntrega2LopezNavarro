@@ -83,6 +83,11 @@ html {/*etiqueta raíz*/
         color: red;
     }
 
+    footer {
+        margin-top: $espaciado-general * 3;
+        @include flex-columna;
+    }
+
     .boton {
         border: solid 1px $color-primario;
         width: 200px;

@@ -22,7 +22,7 @@
     <title>Contacto - Club de lectura Evadla</title>
 </head>
 <body>
-    <header id="arriba">
+    <header>
 
         <img src="../img/logoEvadla2.png" alt="Logo Evadla" class="img-logo-evadla">
 
@@ -55,23 +55,23 @@
         </nav>    
     </header>
 
-    <main class="formulario">
+    <main class="main-contacto container">
         <h1>Formulario</h1>
 
         <form>
-            <div>
+            <div class="campos">
                 <label for="nombre">Nombre y apellido</label>
                 <input type="text" id="nombre">                
             </div>
 
-            <div>
+            <div class="campos">
                 <label for="edad">Edad</label>
                 <input type="number" id="edad">
                 <label for="email">Email</label>
                 <input type="email" id="email">                 
             </div>
 
-            <div>
+            <div class="campos">
                 <p>Género</p>
                 <label for="masculino">Masculino</label>
                 <input type="radio" name="genero" id="masculino">
@@ -81,23 +81,22 @@
                 <input type="radio" name="genero" id="na">                
             </div>
 
-            <div>
+            <div class="campos">
                 <label for="librofavorito">Libro favorito</label>
                 <input type="text" id="librofavorito">
             </div>
 
-            <div>
+            <div class="campos">
                 <label for="mensaje">Comentarios</label>
                 <textarea id="mensaje" cols="30" rows="10"></textarea>
             </div>
 
-            <div>
+            <div class="campos">
                 <input type="submit" value="Enviar Formulario" class="botones-form">
                 <input type="reset" value="Limpiar formulario" class="botones-form">
             </div>
         </form>
 
-        <a href="#arriba">Ir arriba</a>
     </main> 
     
     <footer>
